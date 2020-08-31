@@ -1,8 +1,8 @@
-#Summary: 
+# Summary:
 Parses cve data and spits out all cve's above a specified severity rating and tries to extract web paths to turn into a wordlist.
 
 
-#Usage: 
+# Usage:
 Download cve data in json format from https://nvd.nist.gov/vuln/data-feeds#JSON_FEED
 
 ```
