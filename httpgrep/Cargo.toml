@@ -1,0 +1,24 @@
+[package]
+name = "httpgrep"
+version = "0.1.0"
+authors = ["xEHLE"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+
+[dependencies]
+clap = "~2.33.0"
+reqwest = { version = "0.10.1", features = ["native-tls"] }
+tokio = { version = "0.2.11", features = ["full"] }
+futures = "~0.3.1"
+hyper = "~0.13.2"
+hyper-tls = "~0.4.1"
+native-tls = "~0.2.3"
